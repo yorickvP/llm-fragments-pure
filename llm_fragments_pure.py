@@ -18,7 +18,7 @@ def pure_loader(argument: str) -> llm.Fragment:
     url = f"https://pure.md/{argument}"
     
     headers = {}
-    api_key = os.environ.get("PUREMD_API_KEY")
+    api_key = llm.get_key(alias="puremd", env="PUREMD_API_KEY")
     if api_key:
         headers["x-puremd-api-token"] = api_key
     
