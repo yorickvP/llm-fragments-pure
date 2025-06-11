@@ -16,7 +16,17 @@ llm -f 'pure:https://example.com' "Summarize this page"
 
 ## API Key
 
-Set the `PUREMD_API_KEY` environment variable to use your pure.md API token:
+You can provide your pure.md API token in two ways:
+
+### Option 1: Using LLM keys (recommended)
+
+```bash
+llm keys set puremd
+# Enter your API key when prompted
+llm -f 'pure:https://example.com' "Summarize this page"
+```
+
+### Option 2: Environment variable
 
 ```bash
 export PUREMD_API_KEY=your_api_key_here
