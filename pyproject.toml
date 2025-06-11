@@ -1,6 +1,6 @@
 [project]
 name = "llm-fragments-pure"
-version = "0.1"
+version = "0.2"
 description = "Run URLs through the pure.md API"
 readme = "README.md"
 authors = [{name = "Assistant"}]
